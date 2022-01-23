@@ -23,7 +23,7 @@ describe('Test NoMatch page', () => {
     expect(message.textContent).toMatch(/Usuário não encontrado/);
   })
   
-  it('should have a button "voltar" that sends to home', () => {
+  it('should have a button "voltar"', () => {
     renderWithRouter(<NoMatch />, { route: '/some-page-that-does-not-match' });
     
     const backToHomeButton = screen.getByTestId('goBack');
