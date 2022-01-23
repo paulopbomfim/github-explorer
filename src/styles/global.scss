@@ -13,6 +13,10 @@
 
 body {
   background: var(--background);
+  border-top: 1px solid transparent;
+  background-image: url(../assets/Github.png) ;
+  background-repeat: no-repeat;
+  background-position: top -100px left 100px;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
