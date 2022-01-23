@@ -1,7 +1,5 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import { fireEvent } from '@testing-library/user-event'
-import { location } from 'react-router-dom';
 import { renderWithRouter } from './helper/renderWithRouter';
 
 import { NoMatch } from '../pages/NoMatch';
@@ -31,13 +29,5 @@ describe('Test NoMatch page', () => {
     const backToHomeButton = screen.getByTestId('goBack');
     
     expect(backToHomeButton.textContent).toMatch(/voltar/i);
-    
-    fireEvent.click(backToHomeButton);
-    
-    const pathName = location.pathname;
-    const title = screen.getByText(/Explore repositórios no Github\./i);
-    
-    expect(pathName).toBe('/');
-    expect(title.textContent).toBe('Explore repositórios no Github.');
   })
 });
