@@ -30,7 +30,7 @@ describe('Test NoMatch page', () => {
     
     const backToHomeButton = screen.getByTestId('goBack');
     
-    expect(backToHomeButton.textContent).toMatch(/voltar/);
+    expect(backToHomeButton.textContent).toMatch(/voltar/i);
     
     fireEvent.click(backToHomeButton);
     
