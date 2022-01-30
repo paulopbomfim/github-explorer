@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --green: #04D361;
+  --background: #F2F2FA;
+  --title: #3A3A3A;
+  --text: #A8A8B3;
+}
+
+body {
+  background: var(--background);
+  border-top: 1px solid transparent;
+  background-image: url(../assets/Github.png) ;
+  background-repeat: no-repeat;
+  background-position: top -7rem right -18rem;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: var(--title);
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+button {
+  color: white;
+}
+
+p {
+  color: var(--text);
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+@media (max-width: 639px) {
+  body {
+    font-size: 68.75%; //* 11px
+  }
+
+}
+
+@media (min-width: 640px){
+  body {
+    font-size: 75%; //* 12px
+  }
+}
+
+@media (min-width: 768px){
+  body {
+    font-size: 81.25%; //* 13px
+  }
+}
+
+@media (min-width: 1024px){
+  body {
+    font-size: 87.5%; //* 14px
+    background-position: top right 4rem;
+
+  }
+  
+}
+
+@media (min-width: 1200px){
+  body {
+    font-size: 93.75%; //* 15px
+  }
+}
+
+@media (min-width: 1440px){
+  body {
+    font-size: 100%; //* 16px
+  }
+}

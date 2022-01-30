@@ -1,0 +1,29 @@
+.HeaderContainer {
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .LinkContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      width: 0.5rem;
+      margin-right: 5px;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .HeaderContainer {
+    width: 70%;
+    max-width: 1024px;
+  }
+}
